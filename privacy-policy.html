@@ -75,16 +75,15 @@
 
   <!-- ================= ESPAÑOL ================= -->
   <section id="es" class="lang active">
-    <div class="highlight"><strong>Borrador sin publicar:</strong> versión preparada para cuando la app tenga cuenta y funciones sociales. Pendiente de revisión legal; los datos entre [corchetes] están por completar.</div>
 
     
     <header>
       <h1>Política de Privacidad</h1>
-      <p class="meta">CineLog Pro (<code>com.ivantorres.cinelogpro</code>) · Última actualización: [fecha de publicación]</p>
+      <p class="meta">CineLog Pro (<code>com.ivantorres.cinelogpro</code>) · Última actualización: 24 de noviembre de 2026</p>
     </header>
 
     <div class="highlight">
-      <strong>Resumen:</strong> CineLog Pro <strong>no recopila, transmite ni vende ningún dato personal</strong>.
+      <strong>Resumen:</strong> sin cuenta, CineLog Pro <strong>no recopila, transmite ni vende ningún dato personal</strong>.
       Toda tu información (tu diario de visionado, valoraciones, notas, colecciones y ajustes) se guarda
       <strong>únicamente en tu dispositivo</strong>. No hay publicidad, ni analíticas, ni seguimiento. Solo si creas una cuenta (opcional) para las funciones sociales tratamos los datos que explica la sección 7.
     </div>
@@ -96,10 +95,10 @@
       <li>Valoraciones, notas, fechas de visionado, estados y colecciones.</li>
       <li>Estadísticas y preferencias de la aplicación (idioma, tema, etc.).</li>
     </ul>
-    <p>El desarrollador <strong>no tiene acceso</strong> a estos datos: nunca salen de tu dispositivo salvo que tú decidas exportarlos o compartirlos (ver secciones 3 y 5).</p>
+    <p>El desarrollador <strong>no tiene acceso</strong> a estos datos: nunca salen de tu dispositivo salvo que tú decidas exportarlos o compartirlos (secciones 3 y 5) o, con una cuenta, publicarlos o guardarlos en la copia en la nube (sección 7).</p>
 
     <h2>2. Conexiones a internet</h2>
-    <p>La app está pensada para funcionar sin conexión. Solo sale a internet en los tres casos siguientes, y en ninguno de ellos se envía información personal tuya:</p>
+    <p>La app está pensada para funcionar sin conexión. Sin cuenta, solo sale a internet en los cuatro casos siguientes, y en ninguno de ellos se envía información personal tuya:</p>
 
     <p><strong>a) Búsqueda de contenido.</strong> Cuando buscas contenido online, la app consulta servicios públicos de terceros para obtener información y carátulas. Estos servicios reciben únicamente el <strong>texto de tu búsqueda</strong> y, de forma inherente a cualquier conexión, tu <strong>dirección IP</strong>. No se les envía ningún dato personal ni identificador tuyo. Los servicios utilizados son:</p>
     <ul>
@@ -115,7 +114,9 @@
 
     <p><strong>c) Tipografías.</strong> La app usa las fuentes Inter y Poppins a través de <a href="https://fonts.google.com" target="_blank" rel="noopener">Google Fonts</a>: se descargan de los servidores de Google la primera vez y quedan guardadas en el dispositivo. En esa descarga Google recibe tu dirección IP, igual que al visitar cualquier página web. No se le envía ningún otro dato ni identificador.</p>
 
-    <p>El tratamiento de esos datos se rige por las políticas de privacidad de cada servicio. Si no usas la búsqueda online, la app no hace ninguna otra conexión más allá de la descarga inicial de tipografías.</p>
+    <p><strong>d) Configuración del servicio.</strong> Al abrirse, la app consulta la configuración pública del servicio de cuentas (en Supabase, en la Unión Europea) para saber si las funciones sociales están disponibles y si hace falta actualizar la app. Esa consulta no lleva ningún dato ni identificador tuyo: el servidor solo recibe tu dirección IP, como en cualquier conexión.</p>
+
+    <p>El tratamiento de esos datos se rige por las políticas de privacidad de cada servicio. Sin cuenta y sin usar la búsqueda online, la app solo hace dos conexiones: la descarga inicial de tipografías y la consulta de la configuración. Con cuenta, además usa los servicios de la sección 7.</p>
 
     <h2>3. Cámara (escaneo de QR)</h2>
     <p>La app solicita permiso de cámara <strong>solo</strong> si usas la función de escanear un código QR para importar el catálogo de otro dispositivo. El reconocimiento del QR ocurre <strong>en tu dispositivo</strong>; las imágenes de la cámara no se guardan ni se envían a ningún servidor. La cámara es opcional: el resto de la app funciona sin conceder este permiso.</p>
@@ -146,7 +147,7 @@
     <p>No tratamos tu ubicación, tus contactos ni identificadores publicitarios, y tu <strong>nota personal nunca sale del dispositivo</strong>.</p>
     <p><strong>c) Qué es público.</strong> Si tu perfil es público, cualquiera puede ver, también desde un enlace sin cuenta, tu perfil y lo que publicas con visibilidad pública. Puedes hacer el perfil privado, ocultar tus estadísticas y elegir quién ve cada ficha. Lo que se comparte fuera de la app (por ejemplo, la vista previa de un enlace en WhatsApp) puede quedar guardado un tiempo en esos servicios.</p>
     <p><strong>d) Para qué y con qué base.</strong> Para darte las funciones sociales que pides al crear la cuenta (contrato); para mantener la plataforma segura, moderar y evitar abusos (interés legítimo y obligación legal), y para lo demás, con tu autorización previa, que das al crear la cuenta y puedes retirar borrándola.</p>
-    <p><strong>e) Moderación automática.</strong> Lo que publicas se analiza con reglas automáticas y con un modelo de inteligencia artificial de Anthropic (Claude), que solo recibe el texto o la imagen, sin tu nombre de usuario ni tu email. Lo dudoso lo revisa una persona. Puedes recurrir cualquier decisión (ver los Términos).</p>
+    <p><strong>e) Moderación automática.</strong> Lo que publicas se analiza con reglas automáticas y con un modelo de inteligencia artificial de Anthropic (Claude), que solo recibe lo que se revisa (el texto o la imagen; si se revisa tu nombre de usuario, ese nombre), sin tu email ni ningún identificador de tu cuenta. Lo dudoso lo revisa una persona. Puedes recurrir cualquier decisión (ver los Términos).</p>
     <p><strong>f) Con quién se comparten (encargados).</strong> Solo con los proveedores que hacen funcionar el servicio, como encargados del tratamiento, con un contrato de transmisión de datos y solo para ese fin:</p>
     <ul>
       <li><strong>Supabase</strong>: base de datos, inicio de sesión y almacenamiento, en servidores de la Unión Europea.</li>
@@ -154,13 +155,14 @@
       <li><strong>Anthropic</strong>: la moderación automática, en Estados Unidos.</li>
       <li><strong>Google</strong>: el inicio de sesión con Google, si lo usas, y el envío de los avisos push (Firebase Cloud Messaging).</li>
       <li><strong>Resend</strong>: el envío de los correos de la cuenta (verificar el email y cambiar la contraseña), en Estados Unidos.</li>
+      <li><strong>GitHub</strong>: guarda las copias de seguridad cifradas de la base de datos, en Estados Unidos.</li>
     </ul>
     <p>Algunos de estos proveedores están fuera de Colombia: esas transferencias se hacen a países con un nivel de protección adecuado o con las garantías que exige la ley. No vendemos tus datos ni los usamos para publicidad.</p>
     <p><strong>g) Cuánto tiempo.</strong> Mientras tengas la cuenta. Al borrarla se borra al momento tu perfil, lo que publicaste, a quién sigues y quién te sigue, tus sesiones y la copia en la nube. Tu nombre de usuario queda reservado 30 días para que nadie te suplante. Los reportes y las decisiones de moderación se guardan sin el contenido. Las copias en caché de una foto de perfil, que sirven para que cargue más rápido, caducan en un día como mucho. Las copias de seguridad del servidor se renuevan y lo borrado desaparece de ellas en 30 días como mucho, y los registros técnicos, en un máximo de 90 días. El identificador de un dispositivo para los avisos push se borra al cerrar sesión en él, o solo si no se usa en 270 días.</p>
     <p><strong>h) Tus derechos.</strong> Como titular puedes conocer, actualizar y rectificar tus datos; pedir prueba de la autorización que diste; saber, si lo pides, qué uso se ha dado a tus datos; presentar quejas ante la Superintendencia de Industria y Comercio (SIC); revocar la autorización o pedir que se supriman tus datos cuando no haya un deber legal o contractual de conservarlos, y acceder a ellos gratis. Desde la app puedes editar tu perfil, <strong>descargar tus datos</strong> y <strong>borrar tu cuenta</strong>.</p>
     <p><strong>i) Cómo ejercerlos.</strong> Escribe a <a href="mailto:soporte@cinelogpro.app">soporte@cinelogpro.app</a> desde el email de tu cuenta (o identifícate de otra forma si ya no lo usas) y di qué pides. Las consultas se responden en 10 días hábiles y los reclamos en 15. Si no fuera posible, te avisaremos antes del plazo, con el motivo, y la respuesta llegará como mucho 5 días hábiles después en las consultas y 8 en los reclamos. Si a un reclamo le falta algo, te lo pediremos en los 5 días hábiles siguientes; si no lo completas en dos meses, se entiende que desistes. Para presentar una queja ante la SIC hace falta haber hecho antes la consulta o el reclamo aquí. Si vives en otro país, también puedes acudir a la autoridad de protección de datos de tu país.</p>
     <p><strong>j) Seguridad.</strong> Las conexiones van cifradas, la sesión se guarda en el almacén seguro del dispositivo y la base de datos solo deja ver a cada persona lo que le corresponde.</p>
-    <p><strong>k) Vigencia.</strong> Esta política rige desde [fecha de publicación]. La base de datos de cuentas estará vigente mientras se preste el servicio, y cada dato se guarda durante los plazos de la letra g).</p>
+    <p><strong>k) Vigencia.</strong> Esta política rige desde el 24 de noviembre de 2026. La base de datos de cuentas estará vigente mientras se preste el servicio, y cada dato se guarda durante los plazos de la letra g).</p>
 
     <h2>8. Privacidad de los menores</h2>
     <p>La aplicación no está dirigida a menores de 13 años. La cuenta y las funciones sociales son solo para mayores de 18 años: al crear el perfil se declara la edad, y si sabemos que una cuenta es de un menor, la cerramos.</p>
@@ -177,16 +179,15 @@
 
   <!-- ================= ENGLISH ================= -->
   <section id="en" class="lang">
-    <div class="highlight"><strong>Unpublished draft:</strong> version prepared for when the app has accounts and social features. Pending legal review; data in [brackets] is still to be completed.</div>
 
     
     <header>
       <h1>Privacy Policy</h1>
-      <p class="meta">CineLog Pro (<code>com.ivantorres.cinelogpro</code>) · Last updated: [publication date]</p>
+      <p class="meta">CineLog Pro (<code>com.ivantorres.cinelogpro</code>) · Last updated: November 24, 2026</p>
     </header>
 
     <div class="highlight">
-      <strong>Summary:</strong> CineLog Pro <strong>does not collect, transmit, or sell any personal data</strong>.
+      <strong>Summary:</strong> without an account, CineLog Pro <strong>does not collect, transmit, or sell any personal data</strong>.
       All your information (your viewing diary, ratings, notes, collections, and settings) is stored
       <strong>only on your device</strong>. There are no ads, no analytics and no tracking. Only if you create an (optional) account for the social features do we process the data explained in section 7.
     </div>
@@ -198,10 +199,10 @@
       <li>Ratings, notes, watch dates, statuses, and collections.</li>
       <li>App statistics and preferences (language, theme, etc.).</li>
     </ul>
-    <p>The developer has <strong>no access</strong> to this data: it never leaves your device unless you choose to export or share it (see sections 3 and 5).</p>
+    <p>The developer has <strong>no access</strong> to this data: it never leaves your device unless you choose to export or share it (sections 3 and 5) or, with an account, to publish it or keep it in the cloud backup (section 7).</p>
 
     <h2>2. Internet connections</h2>
-    <p>The app is designed to work offline. It only reaches the internet in the three cases below, and none of them sends any personal information about you:</p>
+    <p>The app is designed to work offline. Without an account, it only reaches the internet in the four cases below, and none of them sends any personal information about you:</p>
 
     <p><strong>a) Content search.</strong> When you search for content online, the app queries public third-party services to retrieve information and cover art. These services only receive the <strong>text of your search</strong> and, inherently to any connection, your <strong>IP address</strong>. No personal data or identifier of yours is sent to them. The services used are:</p>
     <ul>
@@ -217,7 +218,9 @@
 
     <p><strong>c) Fonts.</strong> The app uses the Inter and Poppins typefaces via <a href="https://fonts.google.com" target="_blank" rel="noopener">Google Fonts</a>: they are downloaded from Google's servers the first time and then cached on your device. During that download Google receives your IP address, just as when visiting any web page. No other data or identifier is sent.</p>
 
-    <p>The handling of that data is governed by each service's own privacy policy. If you don't use online search, the app makes no connection beyond the initial font download.</p>
+    <p><strong>d) Service settings.</strong> When it opens, the app checks the public settings of the account service (at Supabase, in the European Union) to know whether the social features are available and whether the app needs an update. That request carries no data or identifier of yours: the server only receives your IP address, as with any connection.</p>
+
+    <p>The handling of that data is governed by each service's own privacy policy. Without an account and without online search, the app only makes two connections: the initial font download and the settings check. With an account, it also uses the services in section 7.</p>
 
     <h2>3. Camera (QR scanning)</h2>
     <p>The app requests camera permission <strong>only</strong> if you use the feature to scan a QR code to import another device's catalog. QR recognition happens <strong>on your device</strong>; camera images are neither stored nor sent to any server. The camera is optional: the rest of the app works without granting this permission.</p>
@@ -248,7 +251,7 @@
     <p>We do not process your location, your contacts or advertising identifiers, and your <strong>personal note never leaves the device</strong>.</p>
     <p><strong>c) What is public.</strong> If your profile is public, anyone can see your profile and what you publish with public visibility, including through a link without an account. You can make your profile private, hide your stats and choose who sees each entry. What is shared outside the app (for example, a link preview in WhatsApp) may stay stored for a while in those services.</p>
     <p><strong>d) Purposes and legal bases.</strong> To provide the social features you ask for when creating the account (contract); to keep the platform safe, moderate it and prevent abuse (legitimate interest and legal obligation); and otherwise with your prior authorization, which you give when creating the account and can withdraw by deleting it.</p>
-    <p><strong>e) Automated moderation.</strong> What you publish is analyzed with automatic rules and an artificial intelligence model by Anthropic (Claude), which only receives the text or the image, without your username or email. A person reviews unclear cases. You can appeal any decision (see the Terms).</p>
+    <p><strong>e) Automated moderation.</strong> What you publish is analyzed with automatic rules and an artificial intelligence model by Anthropic (Claude), which only receives what is being reviewed (the text or the image; if your username is being reviewed, that name), without your email or any identifier of your account. A person reviews unclear cases. You can appeal any decision (see the Terms).</p>
     <p><strong>f) Who it is shared with (processors).</strong> Only with the providers that run the service, as data processors, under a data transfer agreement and only for that purpose:</p>
     <ul>
       <li><strong>Supabase</strong>: database, sign-in and storage, on servers in the European Union.</li>
@@ -256,13 +259,14 @@
       <li><strong>Anthropic</strong>: automated moderation, in the United States.</li>
       <li><strong>Google</strong>: sign-in with Google, if you use it, and delivery of push notices (Firebase Cloud Messaging).</li>
       <li><strong>Resend</strong>: sending the account emails (email verification and password reset), in the United States.</li>
+      <li><strong>GitHub</strong>: stores the encrypted database backups, in the United States.</li>
     </ul>
     <p>Some of these providers are outside Colombia: those transfers go to countries with an adequate level of protection or with the safeguards the law requires. We do not sell your data or use it for advertising.</p>
     <p><strong>g) How long.</strong> As long as you keep the account. When you delete it, your profile, what you published, who you follow and who follows you, your sessions and the cloud backup are deleted right away. Your username stays reserved for 30 days so nobody can impersonate you. Moderation reports and decisions are kept without the content. Cached copies of a profile photo, which make it load faster, expire within one day at most. Server backups are renewed and deleted data disappears from them within 30 days at most, and technical logs within 90 days at most. The identifier of a device for push notices is deleted when you sign out on it, or automatically if it is not used for 270 days.</p>
     <p><strong>h) Your rights.</strong> As the data subject you can access, update and correct your data; ask for proof of the authorization you gave; be told, on request, how your data has been used; file complaints with Colombia's Superintendence of Industry and Commerce (SIC); withdraw your authorization or ask for your data to be deleted when there is no legal or contractual duty to keep it; and access it free of charge. From the app you can edit your profile, <strong>download your data</strong> and <strong>delete your account</strong>.</p>
     <p><strong>i) How to exercise them.</strong> Email <a href="mailto:soporte@cinelogpro.app">soporte@cinelogpro.app</a> from your account's email address (or identify yourself another way if you no longer use it) and say what you are asking for. Requests are answered within 10 business days and complaints within 15. If that is not possible, we will tell you before the deadline, with the reason, and the answer will arrive at most 5 business days later for requests and 8 for complaints. If a complaint is missing something, we will ask for it within the next 5 business days; if you don't complete it within two months, it is considered withdrawn. To file a complaint with the SIC you must first have made the request or complaint here. If you live in another country, you can also contact your country's data protection authority.</p>
     <p><strong>j) Security.</strong> Connections are encrypted, the session is kept in the device's secure storage and the database only lets each person see what concerns them.</p>
-    <p><strong>k) Effective date.</strong> This policy is in force from [publication date]. The accounts database will remain in force while the service is provided, and each piece of data is kept for the periods in letter g).</p>
+    <p><strong>k) Effective date.</strong> This policy is in force from November 24, 2026. The accounts database will remain in force while the service is provided, and each piece of data is kept for the periods in letter g).</p>
 
     <h2>8. Children's privacy</h2>
     <p>The app is not directed to children under 13. The account and social features are only for people 18 or older: age is declared when creating the profile, and if we learn that an account belongs to a minor, we close it.</p>
